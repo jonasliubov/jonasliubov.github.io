@@ -70,25 +70,9 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#fh5co-event">Event</a></li>
-						<li > <!--class="has-dropdown"-->
-							<a href="#fh5co-couple-story">Story</a>
-							<!--<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>-->
-						</li>
-						<li >
-							<a href="#fh5co-gallery">Gallery</a>
-							<!--<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>-->
-						</li>
+						<li><a href="index.html#fh5co-event">Event</a></li>
+						<li ><a href="index.html#fh5co-couple-story">Story</a></li>
+						<li ><a href="index.html#fh5co-gallery">Gallery</a></li>
 					</ul>
 				</div>
 			</div>
@@ -147,7 +131,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div id="fh5co-event" class="fh5co-bg bg-main1" >
 		<div class="overlay"></div>
 		<div class="container">
@@ -350,59 +333,6 @@
 		</div>
 	</div>
 
-	<!--<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Estimated Guest</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">We Catter</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Events Done</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Hours Spent</span>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-
 	<div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
@@ -528,14 +458,58 @@
 		});
 	</script>
 	<script>
-		var $page = $('html, body');
-		$('a[href*="#"]').click(function() {
-			$page.animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 600);
-			return false;
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				headerHeight = $('.header').height();
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top - headerHeight
+					}, 500, function() {
+						target.focus();
+					});
+					return false;
+				}
+			}
 		});
 	</script>
+	<!--<script>
+		// собираем все якоря; устанавливаем время анимации и количество кадров
+		const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+				animationTime = 300,
+				framesCount = 20;
+
+		anchors.forEach(function(item) {
+			// каждому якорю присваиваем обработчик события
+			item.addEventListener('click', function(e) {
+				// убираем стандартное поведение
+				e.preventDefault();
+
+				// для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+				let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+
+				// запускаем интервал, в котором
+				let scroller = setInterval(function() {
+					// считаем на сколько скроллить за 1 такт
+					let scrollBy = coordY / framesCount;
+
+					// если к-во пикселей для скролла за 1 такт больше расстояния до элемента
+					// и дно страницы не достигнуто
+					if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+						// то скроллим на к-во пикселей, которое соответствует одному такту
+						window.scrollBy(0, scrollBy);
+					} else {
+						// иначе добираемся до элемента и выходим из интервала
+						window.scrollTo(0, coordY);
+						clearInterval(scroller);
+					}
+					// время интервала равняется частному от времени анимации и к-ва кадров
+				}, animationTime / framesCount);
+			});
+		});
+	</script>-->
+
 	</body>
 </html>
 
