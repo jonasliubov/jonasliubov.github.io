@@ -1856,7 +1856,16 @@ form label {
     background-image:url(../images/main1.jpg);
     background-position: 50% 0 !important;
   }
-  /*element.style header {
-    background-position: -264px 0;
-  }*/
+}
+
+.bg-main1{
+  background-image:url(../images/main2.jpg);
+  position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-main1{
+    background-image:url(../images/main2.jpg);
+    background-position: 64% 0 !important;
+  }
 }
