@@ -368,6 +368,21 @@
 		</div>
 	</div>
 
+		<!--<div id="map" class="fh5co-map"></div>-->
+		<div style="overflow:hidden;width: 100%;position: relative;">
+			<iframe style="width: 100%" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;
+			q=Gildenhuis%20Merelbekestraat%2099%2C%209090%20Melle+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;
+			t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+			</iframe>
+			<!--<div style="position: absolute;
+					width: 80%;bottom: 10px;
+					left: 0;right: 0;
+					margin-left: auto;
+					margin-right: auto;
+					color: #000;
+					text-align: center;">
+				</div>-->
+
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row copyright">
@@ -455,41 +470,6 @@
 			}
 		});
 	</script>
-	<!--<script>
-		// собираем все якоря; устанавливаем время анимации и количество кадров
-		const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-				animationTime = 300,
-				framesCount = 20;
-
-		anchors.forEach(function(item) {
-			// каждому якорю присваиваем обработчик события
-			item.addEventListener('click', function(e) {
-				// убираем стандартное поведение
-				e.preventDefault();
-
-				// для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-				let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-
-				// запускаем интервал, в котором
-				let scroller = setInterval(function() {
-					// считаем на сколько скроллить за 1 такт
-					let scrollBy = coordY / framesCount;
-
-					// если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-					// и дно страницы не достигнуто
-					if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-						// то скроллим на к-во пикселей, которое соответствует одному такту
-						window.scrollBy(0, scrollBy);
-					} else {
-						// иначе добираемся до элемента и выходим из интервала
-						window.scrollTo(0, coordY);
-						clearInterval(scroller);
-					}
-					// время интервала равняется частному от времени анимации и к-ва кадров
-				}, animationTime / framesCount);
-			});
-		});
-	</script>-->
 
 	</body>
 </html>
