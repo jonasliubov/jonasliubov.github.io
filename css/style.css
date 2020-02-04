@@ -1027,7 +1027,7 @@ form label {
 
 .couple-wrap {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 12em;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -1347,7 +1347,7 @@ form label {
   color: #fff;
 }
 #fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.91);
 }
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
@@ -2015,8 +2015,8 @@ form label {
   background-size:22px 100%;
 }
 .addeventatc_dropdown .copyx {
-  height:21px;
-  display:block;
+  height:0;
+  display:none;
   position:relative;
   cursor:default;
 }
@@ -2036,3 +2036,16 @@ form label {
 }
 .addeventatc_dropdown.topdown.addeventatc-selected {transform:scale(1,1) translateY(0px)!important;}
 .addeventatc_dropdown .drop_markup {background-color:#f4f4f4;}
+
+/* gallery*/
+img {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+img:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}

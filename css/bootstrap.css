@@ -2896,7 +2896,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-block {
   display: block;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .btn-block + .btn-block {
