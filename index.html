@@ -13,10 +13,6 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!--
-	Website: 		http://freehtml5.co/
-	 -->
-
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -56,7 +52,22 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+		<!-- AddEvent script -->
+		<script type="text/javascript" src="js/atc.min.js" async defer></script>
 
+		<!-- AddEvent Settings -->
+		<script type="text/javascript">
+			window.addeventasync = function(){
+				addeventatc.settings({
+					appleical  : {show:true, text:"Apple Calendar"},
+					google     : {show:true, text:"Google <em>(online)</em>"},
+					office365  : {show:false, text:"Office 365 <em>(online)</em>"},
+					outlook    : {show:false, text:"Outlook"},
+					outlookcom : {show:false, text:"Outlook.com <em>(online)</em>"},
+					yahoo      : {show:false, text:"Yahoo <em>(online)</em>"}
+				});
+			};
+		</script>
 	</head>
 	<body>
 		
@@ -86,6 +97,20 @@
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<!--<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>-->
+							<!-- AddEvent button -->
+							<div title="Add to Calendar" class="addeventatc" data-styling="none">
+								Add to Calendar
+								<span class="arrow">&nbsp;</span>
+								<span class="start">06/18/2015 09:00 AM</span>
+								<span class="end">06/18/2015 11:00 AM</span>
+								<span class="timezone">Europe/Paris</span>
+								<span class="title">Summary of the event</span>
+								<span class="description">Description of the event</span>
+								<span class="location">Location of the event</span>
+								<span class="organizer">Organizer</span>
+								<span class="organizer_email">Organizer e-mail</span>
+								<span class="all_day_event">true</span>
+							</div>
 						</div>
 					</div>
 				</div>
