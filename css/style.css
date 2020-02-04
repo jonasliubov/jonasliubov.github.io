@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  padding: 14%;
   width: 100%;
   float: left;
   -webkit-border-radius: 4px;
@@ -1870,17 +1870,17 @@ form label {
   position: center;
 }
 
-@media screen and (max-width: 768px) {
-  .bg-main1{
-    background-image:url(../images/main2.jpg);
-    background-position: 64% 0 !important;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .bg-main1{
     background-image:url(../images/main2.jpg);
     background-position: 78% 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-main1{
+    background-image:url(../images/main2.jpg);
+    background-position: 64% 0 !important;
   }
 }
 
@@ -1897,7 +1897,8 @@ form label {
   font-size:15px;
   font-weight:600;
   text-decoration:none;
-  padding:12px 46px 12px 18px;}
+  padding:12px 46px 12px 18px;
+}
 
 .addeventatc:hover{
   color:#fff;
@@ -1938,6 +1939,7 @@ form label {
 
 /* Drop down */
 .addeventatc_dropdown {
+  left: -28px !important;
   width:230px;
   position:absolute;
   padding:6px 0 0 0;
