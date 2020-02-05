@@ -1,7 +1,11 @@
 @font-face {
     font-family: 'icomoon';
     src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
+            format("embedded-opentype"),
+            url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+            url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+            url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -68,10 +72,10 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0 0 20px 0
 }
 
-::-webkit-selection {
+/*::-webkit-selection {
     color: #fff;
     background: #00b3ef
-}
+}*/
 
 ::-moz-selection {
     color: #fff;
@@ -2241,5 +2245,98 @@ form label {
 @media (max-width: 768px) {
     body {
         padding: 0
+    }
+}
+/*---------------------------------*/
+@keyframes click-wave {
+    0% {
+        height: 50px;
+        width: 50px;
+        opacity: 0.35;
+        position: relative;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+        margin-left: -80px;
+        margin-top: -80px;
+        opacity: 0;
+    }
+}
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: all 0.15s ease-out 0s;
+    background: rgba(130, 130, 130, 0.53);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    z-index: 1000;
+}
+.option-input::after{
+    font-family: 'icomoon', serif;
+    content: '+1';
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 500;
+}
+.option-input:hover {
+    background: #00b3ef;
+}
+.option-input:checked {
+    background: #00b3ef;
+}
+.option-input:checked::before {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+}
+.option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    /*background: white;*/
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+.option-input.radio {
+    border-radius: 50%;
+}
+.option-input.radio::after {
+    border-radius: 50%;
+}
+body label {
+    display: block;
+    line-height: 40px;
+}
+@media (max-width: 768px) {
+    .pull-right-d {
+        float: right;
     }
 }
