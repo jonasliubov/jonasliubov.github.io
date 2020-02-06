@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa4fd42-6ffe-4c76-91dc-e738232c5b38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../magicdimaga.github.io" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,7 +99,10 @@
       <workItem from="1580921925513" duration="5040000" />
       <workItem from="1580928244076" duration="457000" />
       <workItem from="1580928780668" duration="2920000" />
-      <workItem from="1580932576017" duration="8374000" />
+      <workItem from="1580932576017" duration="8806000" />
+      <workItem from="1580942607218" duration="1258000" />
+      <workItem from="1580981265337" duration="31000" />
+      <workItem from="1580993061825" duration="1083000" />
     </task>
     <servers />
   </component>
@@ -139,10 +142,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="318" y="137" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1578410992626" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1580927545299">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1580941579924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580927545299" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580941579924" />
     <state x="263" y="100" key="IDE.errors.dialog" timestamp="1580940023729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
