@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa4fd42-6ffe-4c76-91dc-e738232c5b38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/ajax_libs_jquery_2.0.3_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/add_guests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dimag.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dimag.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +31,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Attending" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -39,6 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1W4BoVUQ35lKxZMPip4k1AD5kaD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -59,6 +71,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\js" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -100,7 +117,14 @@
       <workItem from="1580932576017" duration="8806000" />
       <workItem from="1580942607218" duration="1258000" />
       <workItem from="1580981265337" duration="31000" />
-      <workItem from="1580993061825" duration="2444000" />
+      <workItem from="1580993061825" duration="2599000" />
+      <workItem from="1581026416465" duration="1713000" />
+      <workItem from="1581073246581" duration="3953000" />
+      <workItem from="1581099347830" duration="4000" />
+      <workItem from="1581099440706" duration="1377000" />
+      <workItem from="1581108585820" duration="7783000" />
+      <workItem from="1581116428655" duration="274000" />
+      <workItem from="1581116891308" duration="1027000" />
     </task>
     <servers />
   </component>
@@ -108,6 +132,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="276" y="20" key="#CLI_Interpreters" timestamp="1581074934967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="276" y="20" key="#CLI_Interpreters/0.0.1366.728@0.0.1366.728" timestamp="1581074934967" />
     <state x="275" y="23" key="#Deployment" timestamp="1580927531127">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -116,6 +144,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#File_Watchers/0.0.1366.728@0.0.1366.728" timestamp="1578419083490" />
+    <state x="402" y="0" width="588" height="728" key="#PHP" timestamp="1581074942815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="402" y="0" width="588" height="728" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1581074942815" />
+    <state x="275" y="23" key="#SQL_Dialects" timestamp="1581074777967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1581074777967" />
+    <state x="258" y="33" width="816" height="645" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581076574653">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="258" y="33" width="816" height="645" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1581076574653" />
     <state x="441" y="155" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578410045213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -144,10 +184,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580941579924" />
+    <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1581076600913">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1581076600913" />
     <state x="263" y="100" key="IDE.errors.dialog" timestamp="1580940023729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="100" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1580940023729" />
+    <state x="517" y="284" key="NewPhpFileDialog" timestamp="1581114695133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="284" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1581114695133" />
     <state x="428" y="76" key="RollbackChangesDialog" timestamp="1580928645317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -160,10 +208,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="105" width="540" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1580927083888" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1580925670473">
+    <state x="275" y="94" key="Vcs.Push.Dialog.v2" timestamp="1581026953979">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1580925670473" />
+    <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1581026953979" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1581026911780">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1581026911780" />
     <state x="424" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1580927693102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -172,9 +224,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="373" y="150" key="save.file.as.template.dialog/0.0.1366.728@0.0.1366.728" timestamp="1580927500612" />
-    <state x="346" y="49" key="search.everywhere.popup" timestamp="1580924618273">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581116627613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580924618273" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581116627613" />
   </component>
 </project>

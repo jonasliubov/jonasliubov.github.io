@@ -1,48 +1,37 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html><!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jonas&Liubov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hello! October 10th, 2020 Merelbeke, Belgium.
-	 										We invite you to celebrate our wedding"/>
-	<meta itemprop="image" content="https://jonasliubov.github.io/images/3.jpg" />
-	<meta property="og:image" content="https://jonasliubov.github.io/images/3.jpg">
-	<meta property="og:image:type" content="image/jpeg" />
-	<meta property="og:image:width" content="300" />
-	<meta property="og:image:height" content="200" />
-	<meta property="og:image:secure_url" content="https://jonasliubov.github.io/images/3.jpg" />
-	<meta property="og:type" content="article" />
-	<meta name="keywords" content=""/>
-    <meta name="author" content="starcode.com.ua"/>
-
-    <!-- Facebook and Twitter integration -->
+    <meta name="description"
+          content="Hello! October 10th, 2020 Merelbeke, Belgium. We invite you to celebrate our wedding"/>
+    <meta itemprop="image" content="https://jonasliubov.github.io/images/3.jpg"/>
+    <meta property="og:image" content="https://jonasliubov.github.io/images/3.jpg">
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="200"/>
+    <meta property="og:image:secure_url" content="https://jonasliubov.github.io/images/3.jpg"/>
+    <meta property="og:type" content="article"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="starcode.com.ua"/><!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Jonas&Liubov"/>
     <meta property="og:image" content="https://jonasliubov.github.io/images/3.jpg"/>
-    <meta property="og:url" content=""/>
-    <!--<meta property="og:site_name" content=""/>-->
-    <meta property="og:description" content="Hello! October 10th, 2020 Merelbeke, Belgium.
-	 										We invite you to celebrate our wedding "/>
+    <meta property="og:url" content=""/><!--<meta property="og:site_name" content=""/>-->
+    <meta property="og:description"
+          content="Hello! October 10th, 2020 Merelbeke, Belgium. We invite you to celebrate our wedding "/>
     <meta name="twitter:title" content=""/>
     <meta name="twitter:image" content="https://jonasliubov.github.io/images/3.jpg"/>
     <meta name="twitter:url" content=""/>
     <meta name="twitter:card" content=""/>
-
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
           type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"><!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css"><!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -53,7 +42,7 @@
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <!-- Theme style  -->
@@ -68,7 +57,6 @@
     <![endif]-->
     <!-- AddEvent script -->
     <script type="text/javascript" src="js/atc.min.js" async defer></script>
-
     <!-- AddEvent Settings -->
     <script type="text/javascript">
         window.addeventasync = function () {
@@ -159,6 +147,7 @@
                         <p>Love is what happens when you're making other plans.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -172,42 +161,71 @@
                     <p>Please fill out the form to notify us whether you're attending. Thanks.</p>
                 </div>
             </div>
-            <div class="row animate-box">
+            <div class="row animate-box" >
                 <div class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-1">
-                    <form class="form-inline">
+                    <form class="form-inline" id="form" name="form">
                         <div class="col-md-3 col-sm-3">
                             <div class="form-group">
                                 <label for="name" class="sr-only">Name</label>
-                                <input type="name" class="form-control" id="name" placeholder="Name & Last Name">
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Name & Last Name" required>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required >
                             </div>
                         </div>
                         <div class="col-md-1 col-sm-1 pull-right-d">
                             <label>
-                                <input type="checkbox" class="option-input checkbox"/>
-
+                                <input name="check" type="checkbox" class="option-input checkbox"/>
                             </label>
                         </div>
-                        <!--<div class="col-md-3 col-sm-3">
-                            <div class="form-group">
-                                <label for="email" class="sr-only">Person</label>
-                                <input class="form-control" id="person" placeholder="#Guests">
+                        <div class="col-md-3 col-sm-3">
+                             <button id="btnForm" name="submit" type="submit" class="btn btn-default btn-block">
+                                 <!--data-toggle="modal" data-target="#myModal"-->
+                                I'm Attending
+                             </button>
+                        </div>
+                        <!--<div class="overlay-modal js-overlay-thank-you">
+                            <div class="popup js-thank-you">
+                                <h2>Спасибо за заявку</h2>
+                                <div class="close-popup js-close-thank-you"></div>
                             </div>
                         </div>-->
-                        <div class="col-md-3 col-sm-3">
-                            <button type="submit" class="btn btn-default btn-block">I'm Attending</button>
-                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade " id="myModal" >
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="content">This is a small modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<form id="form" name="form">
+        <input type="text"  name="name" >
+        <input type="text"  name="email" >
+        <button>Отправить заявку</button>
+    </form>
+    <div class="overlay-modal js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h2>Спасибо за заявку</h2>
+            <div class="close-popup js-close-thank-you"></div>
+        </div>
+    </div>-->
     <div id="fh5co-couple-story">
         <div class="container">
             <div class="row">
@@ -480,71 +498,70 @@
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
 
-<!-- Stellar -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
+    <script src="js/simplyCountdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Main -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    <script>
+        //var d = new Date(new Date().getTime() + 200 * 24 * 60 * 1000);
+        var d = new Date(2020, 10, 10, 14, 0, 0);
+        //              (             +2       )
+        // default example
+        simplyCountdown('.simply-countdown-one', {
+            year: d.getFullYear(),
+            month: d.getMonth(),
+            day: d.getDate() + 1,
+            hours: d.getHours()
+        });
 
-<script src="js/simplyCountdown.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<!-- Main -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script src="js/main.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
-<script>
-    //var d = new Date(new Date().getTime() + 200 * 24 * 60 * 1000);
-    var d = new Date(2020, 10, 10, 14, 0, 0);
-    //              (             +2       )
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth(),
-        day: d.getDate() + 1,
-        hours: d.getHours()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth(),
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
-<script>
-    $('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            headerHeight = $('.header').height();
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top - headerHeight
-                }, 500, function () {
-                    target.focus();
-                });
-                return false;
+        //jQuery example
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth(),
+            day: d.getDate(),
+            enableUtc: false
+        });
+    </script>
+    <script>
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                headerHeight = $('.header').height();
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - headerHeight
+                    }, 500, function () {
+                        target.focus();
+                    });
+                    return false;
+                }
             }
-        }
-    });
-</script>
-
+        });
+    </script>
 </body>
 </html>
 
