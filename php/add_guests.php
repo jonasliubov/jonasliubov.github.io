@@ -25,7 +25,6 @@ if ($mysqli->connect_error) {
 $result = $mysqli->query("INSERT INTO " . $db_table . " (name, mail, plusOne) VALUES ('$name','$mail', '$check')");
 
 
-
 /*
     $recepient = "jonasliubov@gmail.com";
     $siteName = "jonasliubov.best";
