@@ -4,8 +4,8 @@ $( document ).ready( function () {
     document.getElementById('link-google').href = encodeURI(['https://www.google.com/calendar/render',
         '?action=TEMPLATE',
         '&text=' + ('Jonas And Liubov Wedding.'),
-        '&dates=' + ('20201010' || ''), // startTime
-        '/' + ('20201011' || ''), // endTime
+        '&dates=' + ('20211010' || ''), // startTime
+        '/' + ('20211011' || ''), // endTime
         '&details=' + ('WEDDING PARTY'),
         '&location=' + ('Merelbekestraat 99, 9090 Melle, Belgium'),
         '&sprop=&sprop=name:'].join(''));
@@ -15,8 +15,8 @@ $( document ).ready( function () {
         'VERSION:2.0',
         'BEGIN:VEVENT',
         'URL:' + document.URL,
-        'DTSTART:' + ('20201010' || ''),  // startTime
-        'DTEND:' + ('20201011' || ''), // endTime
+        'DTSTART:' + ('20211010' || ''),  // startTime
+        'DTEND:' + ('20211011' || ''), // endTime
         'SUMMARY:' + ('Jonas And Liubov Wedding.'),
         'DESCRIPTION:' + ('WEDDING PARTY'),
         'LOCATION:' + ('Merelbekestraat 99, 9090 Melle, Belgium'),
